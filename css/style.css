@@ -1,0 +1,210 @@
+h1 {
+  font-size: 60px;
+  font-family: "open sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+
+.lead {
+  color: #fff;
+}
+
+.banner-text {
+  margin-top: 14%;
+}
+
+.navbar {
+  padding: 38px;
+  font-family: "raleway";
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.btn {
+  background-color: #e84545;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 40px;
+  border: 0;
+}
+.artikel-content{
+  background-size: cover;
+}
+.btn-large {
+  padding: 15px 40px;
+}
+
+.intro {
+  margin: 10rem 0;
+}
+
+.header {
+  background-image: url(../img/pinushead.jpg);
+  background-size: cover;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.header a {
+  color: #fff;
+}
+
+.header .dropdown-item {
+  color: #333;
+}
+
+.overlay {
+  background: rgba(45, 46, 74, 0.80);
+  min-height: 700px;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background-color: #00e0d0;
+  color: #fff;
+}
+
+
+/* slider */
+
+#slider-home .carousel-indicators {
+  position: relative;
+  top: 200px;
+}
+
+.carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+}
+
+.feature {
+  margin-bottom: 50px;
+}
+
+.feature-content {
+  padding: 0 15px;
+  margin-top: 30px;
+}
+
+.feature .icon {
+  color: #e84545;
+  font-size: 60px;
+    
+}
+
+.footer {
+  text-align: center; }
+  .footer-top {
+    background-color: #3a3e64;
+    padding-top: 50px; }
+  .footer-bottom {
+    background-color: #313454;
+    padding: 20px 0; }
+  .footer .footer-col {
+    margin-bottom: 80px; }
+  .footer h5 {
+    color: #fff; }
+  .footer h5 {
+    margin-bottom: 20px; }
+  .footer p {
+    color: rgba(255, 255, 255, 0.5); }
+  .footer a {
+    color: #fff; }
+    .footer a:hover {
+      color: #e84545; }
+  .footer .footer-share {
+    margin-top: 0; }
+    .footer .footer-share li {
+      display: inline-block;
+      float: none; }
+    .footer .footer-share a {
+      border-width: 2px;
+      color: #fff; }
+  .footer .fa-heart {
+    color: #e84545;
+    font-size: 11px;
+    margin: 0 2px; }
+
+
+    .wrapper {
+      padding: 8em 0 6em 0;
+      position: relative;
+    }
+    .wrapper > .inner {
+			margin: 0 auto;
+			width: 70em;
+		}
+		.wrapper.style1 {
+			background-color: #EEE;
+			color: #777;
+    }
+    
+    .gallery-container h1 {
+      text-align: center;
+      margin-top: 70px;
+      font-family: 'Droid Sans', sans-serif;
+      font-weight: bold;
+      color: #58595a;
+  }
+  
+  .gallery-container p.page-description {
+      text-align: center;
+      margin: 30px auto;
+      font-size: 18px;
+      color: #85878c;
+  }
+  
+  /* Styles for the gallery */
+  
+  .tz-gallery {
+      padding: 40px;
+        }
+
+  .tz-gallery .thumbnail {
+      padding: 0;
+      margin-bottom: 30px;
+      border: none;
+  }
+  
+  .tz-gallery img {
+      border-radius: 2px;
+      width: 300px;
+  }
+  
+  .tz-gallery .caption{
+      padding: 26px 30px;
+      text-align: center;
+  }
+  
+  .tz-gallery .caption h3 {
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 0;
+  }
+  
+  .tz-gallery .caption p {
+      font-size: 12px;
+      color: #7b7d7d;
+      margin: 0;
+  }
+  
+  .baguetteBox-button {
+      background-color: transparent !important;
+  }
+
+  .peta-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.peta-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
