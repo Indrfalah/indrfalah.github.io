@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="The Page Description">
+	<style type="text/css">
+		@-ms-viewport {
+			width: device-width;
+		}
+	</style>
+	<title>Bandung Historical</title>
+
+	<link rel="stylesheet" href="css/font-awesome.min.css" media="screen">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/blogtest.css">
+	<link rel="shortcut icon" href="img/gedung_sate.png">
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md " style="background-color: #0c103adc" ;>
+
+		<div class="col-6">
+			<a class="navbar-brand d-flex align-items-baseline" style="color:aliceblue" href="index.html">
+				<img src="img/logotb.png" ;>
+			</a>
+		</div>
+
+		<div class="col-6">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+			    aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" style="color:aliceblue" href="index.html">Home
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" style="color:aliceblue" href="#info">Informasi</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" style="color:aliceblue" href="#galeri">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" style="color:aliceblue" href="#map">Map</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<center>
+		<img src="img/0kmbdg.jpg" style="margin-top: 10px; width: 900px;">
+	</center>
+
+	<div class="row">
+		<div class="col-sm-1">.</div>
+		<div class="col-sm-8">
+			<div class="utama">
+				<div class="kontak"	<p><img src="img/marker.png">&nbsp; Jl. Asia Afrika no. 65, Bandung 40111, Indonesia&nbsp; 
+					|&nbsp;<img src="img/telephone.png"&nbsp;>+6222 4233564 &nbsp;
+					|&nbsp;<a href="http://asianafricanmuseum.org/" target="_blank">&nbsp;<img src="img/monitor.png">&nbsp;Situs Web </a>
+				</p>
+				</div><br>
+				<p>Gedung Merdeka di jalan Asia-Afrika, Bandung, Indonesia, adalah gedung bersejarah yang pernah digunakan sebagai tempat
+					Konferensi Tingkat Tinggi Asia-Afrika tahun 1955. Kini gedung ini digunakan sebagai museum yang memamerkan berbagai
+					benda koleksi dan foto Konferensi Asia-Afrika yang merupakan cikal bakal Gerakan Non-Blok pertama yang pernah digelar
+					disini tahun 1955.</p>
+				<p>Bangunan ini dirancang pada tahun 1926 oleh Van Galen Last dan C.P. Wolff Schoemaker. Keduanya adalah Guru Besar pada
+					Technische Hoogeschool te Bandoeng (TH Bandoeng - yang kemudian menjadi Institut Teknologi Bandung - ITB), dua arsitek
+					Belanda yang terkenal pada masa itu, Gedung ini kental sekali dengan nuansa art deco dan gedung megah ini terlihat dari
+					lantainya yang terbuat dari marmer buatan Italia yang mengkilap, ruangan-ruangan tempat minum-minum dan bersantai terbuat
+					dari kayu cikenhout, sedangkan untuk penerangannya dipakai lampu-lampu bias kristal yang tergantung gemerlapan. Gedung
+					ini menempati areal seluas 7.500 m2.</p>
+			</div>
+		</div>
+
+		<div class="col-sm-3" style="margin-top: 30px" ;>
+
+			</br>
+			<div id="info">
+				<h6>Museum Visit</h6>
+				<div class="mon">Senin&nbsp;: Closed</div>
+				<div class="tue">Selasa: 08.00 - 16.00</div>
+				<div class="wed">Rabu&nbsp;&nbsp;: 08.00 - 16.00</div>
+				<div class="thu">Kamis&nbsp;: 08.00 - 16.00</div>
+				<div class="fri">Jumat: 14.00 - 16.00</div>
+				<div class="sat">Sabtu&nbsp;: 09.00 - 16.00</div>
+				<div class="sun">Minggu: 09.00 - 16.00</div><br>
+				<script src="js/opening.js"></script>
+	
+				
+			</div>
+		</div>
+	</div>
+	<div id="galeri">
+		<h4 style="margin-top:100px;margin-bottom:20px;">Gallery Gedung Merdeka</h4>
+
+		<div class="gallery cf">
+			<div>
+				<img src="/img/kaa6.jpg"/>
+			</div>
+			<div>
+				<img src="/img/kaa5.jpg"/>
+			</div>
+			<div>
+				<img src="/img/kaa4.jpg"/>.
+			</div>
+			<div>
+				<img src="/img/kaa2.jpg"/>
+			</div>
+			<div>
+				<img src="/img/kaa.jpg"/>
+			</div>
+			<div>
+				<img src="/img/kaa3.jpg"/>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="floating-panel">
+		<input type="button" value="Street View" onclick="toggleStreetView();"></input>
+	</div>
+	<h4 style="margin-top:70px;margin-bottom:20px;">Peta Gedung Merdeka</h4>
+	<div id="map"></div>
+
+
+	<script>
+		var panorama;
+
+		function initMap() {
+			var astorPlace = {
+				lat: -6.92142107,
+				lng: 107.60916889
+			};
+
+			// Set up the map
+			var map = new google.maps.Map(document.getElementById('map'), {
+				center: astorPlace,
+				zoom: 16,
+				streetViewControl: false
+			});
+
+			// Set up the markers on the map
+			var cafeMarker = new google.maps.Marker({
+				position: {
+					lat: -6.92142107,
+					lng: 107.60916889
+				},
+				map: map,
+			});
+
+			// We get the map's default panorama and set up some defaults.
+			// Note that we don't yet set it visible.
+			panorama = map.getStreetView();
+			panorama.setPosition(astorPlace);
+			panorama.setPov( /** @type {google.maps.StreetViewPov} */ ({
+				heading: 265,
+				pitch: 0
+			}));
+		}
+
+		function toggleStreetView() {
+			var toggle = panorama.getVisible();
+			if (toggle == false) {
+				panorama.setVisible(true);
+			} else {
+				panorama.setVisible(false);
+			}
+		}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcEv2gJ6QeczQWrMGQ22EfZqK1XC1041E&callback=initMap">
+	</script>
+	<script>
+		var d = new Date();
+		var weekday = new Array(7);
+		weekday[0] = "sun";
+		weekday[1] = "mon";
+		weekday[2] = "tue";
+		weekday[3] = "wed";
+		weekday[4] = "thu";
+		weekday[5] = "fri";
+		weekday[6] = "sat";
+
+		document.getElementsByClassName(weekday[d.getDay()])[0].classList.add("todaysDay");
+	</script>
+
+	<script src="js/gallery.js"></script>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src="js/scroll.js"></script>
+
+	
+</body>
+
+</html>

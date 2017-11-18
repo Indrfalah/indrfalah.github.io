@@ -15,20 +15,13 @@ h1 {
 }
 
 .navbar {
+  position: sticky;
   padding: 38px;
   font-family: "raleway";
   font-weight: 600;
   font-size: 17px;
 }
 
-.btn {
-  background-color: #e84545;
-  color: #fff;
-  font-size: 13px;
-  font-weight: 600;
-  margin-top: 40px;
-  border: 0;
-}
 .artikel-content{
   background-size: cover;
 }
@@ -41,12 +34,18 @@ h1 {
 }
 
 .header {
-  background-image: url(../img/pinushead.jpg);
+  background-image: url(../img/merdeka1.jpg);
   background-size: cover;
   min-height: 500px;
   overflow: hidden;
+  margin: auto;
+  
+  }
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-
 .header a {
   color: #fff;
 }
@@ -56,8 +55,8 @@ h1 {
 }
 
 .overlay {
-  background: rgba(45, 46, 74, 0.80);
-  min-height: 700px;
+  background: rgba(31, 33, 48, 0.9);
+  min-height: 690px;
   overflow: hidden;
 }
 
@@ -142,6 +141,16 @@ h1 {
 			color: #777;
     }
     
+    .gallery-container {
+      margin-top: 50px;      
+    }
+    .gallery-container h3 {
+      text-align: center;
+      font-family: 'Droid Sans', sans-serif;
+      margin-bottom: 40px;
+      font-weight: bold;
+      color: #333333;
+  }
     .gallery-container h1 {
       text-align: center;
       margin-top: 70px;
@@ -207,4 +216,30 @@ h1 {
     height:100%;
     width:100%;
     position:absolute;
+}
+
+#map {
+  height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#floating-panel {
+  position: absolute;
+  top: 1640px;
+  left: 25%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+#floating-panel {
+  margin-left: -52px;
 }
